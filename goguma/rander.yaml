@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: goguma
+    env: docker
+    plan: free
+    region: oregon
+    envVars:
+      - key: DB_URL
+        sync: false
+      - key: DB_USERNAME
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
